@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100vh;
+    height: 100vh;
+  }
+  
+  .registration-class {
+    min-width: 70%;
+    min-height: 70%;
+  }
+  
+  .mat-form-field {
+    width: 100%;
+    min-width: 90%;
+  }
+  
+  mat-card .mat-mdc-card .mdc-card{
+    height: inherit !important;
+  } 
+  
+  mat-card-title,
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .error {
+    padding: 16px;
+    width: 300px;
+    color: white;
+    background-color: red;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
