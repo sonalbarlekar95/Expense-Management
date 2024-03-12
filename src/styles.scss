@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+$primary-color: #673ab7;
+$border-dark: rgba($primary-color, 0.88);
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    line-height: 1.5;
+    tab-size: 4;
+    font-family: Segoe UI, sans-serif;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    margin: 0px !important;
+    background-color: #F2F6F8;
+    width: 100%;
+    padding: 0px !important;
+    font-size: var(--base-font);
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.items-center {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+.block {
+    display: block;
+}
+.inline {
+    display: inline;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.width-full {
+    width: 100%;
+}
+.width-half {
+    width: 50%;
+}
+
+.bg-primary {
+    background-color: $primary-color !important;
+}
+
+.radius-5 {
+    border-radius: 5px;
+}
+.m-0 {
+    margin: 0;
+}
+
+.p-0 {
+    padding: 0;
+}
+.p-10 {
+    padding: 10px;
+}
+.p-15 {
+    padding: 10px;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.text-decoration-none {
+    text-decoration: none;
+}

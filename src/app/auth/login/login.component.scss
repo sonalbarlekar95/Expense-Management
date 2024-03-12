@@ -1,0 +1,57 @@
+// :host {
+//     display: flex;
+//     justify-content: center;
+//     margin: 100px 0px;
+//   }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100vh;
+  height: 100vh;
+}
+
+.login {
+  min-width: 40%;
+  min-height: 40%;
+}
+
+.mat-form-field {
+  width: 100%;
+  min-width: 90%;
+}
+
+mat-card .mat-mdc-card .mdc-card {
+  height: inherit !important;
+}
+
+mat-card-title,
+mat-card-content {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  padding: 16px;
+  width: 300px;
+  color: white;
+  background-color: red;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.forgot-link {
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
+  padding: 5px;
+}
