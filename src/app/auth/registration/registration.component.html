@@ -5,7 +5,7 @@
             <h2>Sign Up</h2></mat-card-title>
         <mat-card-content>
 
-            <form [formGroup]="registrationForm" (ngSubmit)="register()">
+            <form [formGroup]="registrationForm" (ngSubmit)="register()" autocomplete="off">
                 <div>
                     <mat-form-field>
                         <input type="text" matInput placeholder="Enter First Name" formControlName="firstName">
@@ -44,6 +44,9 @@
 
                 <div class="width-full text-center bg-primary radius-5">
                     <button class="width-full bg-primary" style="color: white;" type="submit" mat-flat-button>Register</button>
+                </div>
+                <div class="width-full text-center p-10">Aready Registered?
+                    <a class="width-full text-decoration-none" type="submit" [routerLink]="'/login'"> <strong>Login</strong></a>
                 </div>
 
             </form>

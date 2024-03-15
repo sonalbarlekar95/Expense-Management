@@ -28,20 +28,20 @@ export class RegistrationComponent {
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       contact: ['', Validators.required],
-      email: ['', Validators.required, Validators.email],
+      email: ['', [Validators.required, Validators.pattern('^[0-9a-zA-Z._%+-]+@[0-9a-zA-Z.-]+\\.[a-zA-Z]{2,20}$')]],
       password: ['', Validators.required],
     })
   }
 
   register() {
     if (this.registrationForm.valid) {
-        this.authService.login(this.registrationForm.value).subscribe((resp: any) => {
+        this.authService.register(this.registrationForm.value).subscribe((resp: any) => {
             if(resp) {
-              this.snackBar.open('Login Success.!');
+              this.snackBar.open('Registration Success.!', 'Ok', { duration: 5000 });
               this.router.navigate(['home']);
             }
         }, (error: any) => {
-          this.snackBar.open('Login Failed.!');
+          this.snackBar.open(error, 'Ok', { duration: 5000 });
         })
     }
   }

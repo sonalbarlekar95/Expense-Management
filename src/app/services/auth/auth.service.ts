@@ -16,8 +16,10 @@ export class AuthService {
     ))
   }
 
-  register(user: any) {
-    // return this.auth.createUserWithEmailAndPassword()
+  register(user: any) : Observable<any>{
+    return from(this.auth.createUserWithEmailAndPassword(
+      user.email, user.password
+    ));
   }
 
   recoverPassword(email: string): Observable<any> {
